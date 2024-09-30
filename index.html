@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project PG</title>
     <link rel="stylesheet" href="/home_style.css">
-
+    <style>
+            body {
+        background-color: gradient();
+    }
+    </style>
 </head>
 <body>
     <h1> months in my Shoes </h1>
@@ -49,7 +53,18 @@
     <br> 
     <main>
     </main>
-
-
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.clouds.min.js"></script>
+    <script>
+        VANTA.CLOUDS({
+        el: "vanta.clouds.min.js",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        speed: 0.40
+        })
+    </script>
 </body>
 </html>

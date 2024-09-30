@@ -11,10 +11,16 @@
         animation: 3s ease-in-out infinite breathe alternate;
     }
 
+    /*background css*/
+    body {
+        background-color: webkit-gradient();
+    }
+
 /*nav bar css */
     nav {
         overflow: hidden;
         background-color: #00e1ffbb;
+        text-align: center;
     }
     nav a {
         float: left;
