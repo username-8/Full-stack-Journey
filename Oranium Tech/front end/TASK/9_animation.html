@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            background-color: rgb(0, 155, 34);            text-align: center;
+            padding: 5px;
+            width: 80px;
+            border-radius: 5px;
+        }
+        .typing{
+            background-color: white;
+            height: 35px;
+            width: 200px;
+            z-index: 4;
+            animation:typing 3s infinite;
+        }
+        .box{
+            animation: sprint 2s infinite;
+        }
+        @keyframes typing{
+            from {
+                position: relative;
+                    top: 55px;
+                    left: 0px;
+            }
+            to {
+                position: relative;
+                    top: 55px;
+                    left: 200px;
+            }
+        }
+        @keyframes sprint{
+            from {
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            to {
+                position: relative;
+                top: 0px;
+                left: 300px;
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="typing" ></div>
+    <h1>Animation</h1>
+    <br>
+    <div class="box">
+        <p>CSS animation</p>
+    </div>
+    <br>
+</body>
+</html>
