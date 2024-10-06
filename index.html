@@ -51,6 +51,16 @@
         svg.hand {
             animation: jump-shaking 3s infinite;
         }
+        span.rise-shake {
+        animation: jump-shaking 0.83s infinite;
+    }
+    @keyframes jump-shaking {
+        0% { transform: translateX(0) }
+        10% { transform: translateY(-9px) }
+        40% { transform: translateY(-9px) rotate(90deg) }
+        60% { transform: translateY(-9px) rotate(20deg) } 
+        100% { transform: translateY(0) rotate(0) }
+    }
     </style>
 </head>
 <body>
