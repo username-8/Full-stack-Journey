@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1, h2, h3 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-image: linear-gradient(20deg, #000000 45%, #088f88 , #000000 55%);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+            text-shadow: 0 0 3em #000000;
+        }
+        nav{
+            background-color: #041f1d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px;
+            padding-left: 15%;
+            padding-right: 15%;
+            height: 40px;
+            font-size: 20px;
+        }
+        a{
+            color: rgb(28, 219, 219);
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+        main{
+        }
+            .container {
+                display: flex;
+            }
+                article{
+                    margin: 15px auto;
+                    padding: 5px;
+                    width: 80%;
+                }
+                aside{
+                    width: 90px;
+                    height: 80%;
+                    flex-direction: row;
+                    padding: 20px;
+                    background-color: #003d39;
+                    border-radius: 20px;
+                    position: sticky;
+                    top: 250px;
+                }
+            section{}
+                .gallery{
+                    display: grid;
+                    grid-template-columns: 480px 480px 480px;
+                    grid-template-rows: 280px 280px 280px ;
+                    grid-gap: 20px;
+                }
+            address{}
+        footer{
+            background-color: #041f1d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <title>portfolio</title>
+</head>
+<body>
+    <header id="hero" class="hero">
+        <h1>MY PORTFOLIO</h1>
+    </header>
+    <nav id="index" class="index">
+        <a href="#aboutme">About Me</a> <br>
+        <a href="#mywork">My Work</a> <br>
+        <a href="#contactme">Contact Me</a>
+    </nav>
+    <main id="content" class="content">
+        <div  id="container" class="container" >
+            <article id="aboutme" class="aboutme">
+                <h2>About ME!</h2>
+                <p>Hello! <br> I am a developer with a background in mechanical engineering & Learning Science, currently focused on developing ed-tech solutions. <em>I transitioned to developing adaptive learning platforms to support learners, including those with learning difficulties.</em> I am passionate about leveraging technology to create impactful educational experiences and continuously explore new ways to enhance learning through AI and adaptive systems.</p>
+                <h4>Technology I use</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </article>
+            <aside  id="hoby" class="hoby" ><br>
+                <a href="#aboutme">About ME!</a> <br><br>
+                <a href="#mywork">Gallery</a> <br><br>
+                <a href="contactme">Contact me</a><br><br>
+            </aside>
+        </div>
+        <section id="mywork" class="mywork">
+            <h2>Gallery</h2>
+            <div id="gallery" class="gallery">
+                <iframe src="1_time_table.html" width="450px" height="250px" ></iframe>
+                <iframe src="2_product_table.html" width="450px" height="250px"  ></iframe>
+                <iframe src="4_vibgyor.html" width="450px" height="250px"  ></iframe>
+                <iframe src="5_chess_board.html" width="450px" height="250px"  ></iframe>
+                <iframe src="6_Flex_gallery.html" width="450px" height="250px"  ></iframe>
+                <iframe src="7_grid_gallery.html" width="450px" height="250px"  ></iframe>
+                <iframe src="8_position_tak.html" width="450px" height="250px"  ></iframe>
+            </div>
+        </section>
+        <address id="contactme" class="contactme">
+            <h2>Contact Me!</h2>
+            <p>If you have any questions, please contact me at: <br>
+                <a href="mailto:prabhu.gu@projectpg.xyz">prabhu.gu@projectpg.xyz</a></p>
+        </address>
+    </main>
+    <footer id="lafeet" class="lafeet">
+        <p> © 2024 all rights reserver</p>
+    </footer>
+</body>
+</html>

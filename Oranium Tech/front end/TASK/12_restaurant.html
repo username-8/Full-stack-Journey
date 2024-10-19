@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6b6b;
+            padding: 2px;
+            color: #fff;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #4ecdc4;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #ff6b6b;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .menu-item img {
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff8787;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+        .conin{
+            display: flex;
+        }
+        form{
+            width: 60%;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        map {
+            width: 40%;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Restaurant</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Delicious Restaurant, where passion meets flavor. Our mission is to provide an unforgettable dining experience with locally sourced ingredients and innovative recipes. We take pride in our commitment to sustainability and supporting local farmers.</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <h3>Organic salmon with English peas and chorizo</h3>
+                    <img src="resource/Organic salmon with English peas and chorizo.webp" alt="salmon">
+                    <p>Robust, spicy chorizo brings the flavours of sunny Spain to a classic British dish, with vibrant peas and pea shoots, crispy-skinned salmon and mashed new potatoes. For the ultimate version of Adam Gray's dish, try to source organic salmon, fresh peas and Jersey Royal potatoes if possible.sauce</p>
+                    <p>$22.99</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Seasonal vegetarian risotto</h3>
+                    <img src="resource/Seasonal vegetarian risotto.webp" alt="risotto">
+                    <p>Pierre Koffmann's vegetarian risotto recipe produces a simple yet delicious dish, and is endlessly adaptable depending on what vegetables are in season at the time. Parmesan contains animal rennet, so to make the dish strictly vegetarian simply swap out the cheese for a similar vegetarian equivalent.</p>
+                    <p>$18.99</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Kohitsuji yaki</h3>
+                    <img src="resource/teriyaki lamb chops.webp" alt="yaki">
+                    <p>chargrilled teriyaki lamb chops. Hideki Hiwatashi's teriyaki lamb chop recipe is a celebration of spring, with juicy marinated cutlets served alongside lightly charred seasonal vegetables. Sticky tare sauce, pickled myoga and fiery kinome (the young leaves of the sanshō plant) add some Japanese flair to this fantastic low carb dish.</p>
+                    <p>$26.99</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Spicy tomato soup with basil oil</h3>
+                    <img src="resource/Spicy tomato soup with basil oil.webp" alt="good soup">
+                    <p>This spicy tomato soup recipe by Michael Caines is served with a vibrant basil oil for a delightfully aromatic finish. The soup is made from dehydrated tomatoes for a super-intense result, finished with a fresh tomato concasse and drizzle of balsamic vinegar.</p>
+                    <p>$20.99</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="conin">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <map class="map">
+                    <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
+                </map>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
