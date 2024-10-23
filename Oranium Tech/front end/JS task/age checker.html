@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>free ride check</title>
+</head>
+<body>
+    <main>
+        <form action="agecheck">
+            <h2>Can i get a free ride on the roller coaster</h2>
+            <input type="number" id="user_age" placeholder="please enter age"> 
+            <button type="submit">do i get a free ride</button>
+        </form>
+    </main>
+    <div>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e){
+            e.preventDefault();
+            const user_age = Number(document.getElementById('user_age').value);
+            if(user_age > 5 && user_age < 12){
+                document.getElementById('result').innerHTML = 'you can get a free ride';
+            }
+            else if(user_age > 12 && user_age < 18){
+                document.getElementById('result').innerHTML = 'you get 50% discount';
+            }
+            else if(user_age > 18 && user_age < 70){
+                document.getElementById('result').innerHTML = 'please pay full amount & corresponding taxes & remember to smile';
+            }
+            else if(user_age > 65 && user_age < 70){
+                document.getElementById('result').innerHTML = 'please sign the waiver form before you pay the full amount';
+            }
+            else if(user_age > 0 && user_age < 5){
+                document.getElementById('result').innerHTML = 'alert: we have a missing child & possible case of Parental neglect';
+            }
+            else if(user_age > 70 && user_age < 200){
+                document.getElementById('result').innerHTML = 'sorry, company policy, we do not allow anyone over 70 to ride the roller coaster';
+            }
+            else if(user_age >= -1 && user_age <= 0){
+                document.getElementById('result').innerHTML = 'contact potential psyckers Alert!, <br> unborn foetus Alert!, <br> contact the imperium';
+            }
+            else if(user_age < -1 ){
+                document.getElementById('result').innerHTML = 'contact SCP!, possible anomalous Entity, lock down the facility & pray for your life';
+            }
+            else if(user_age > 200){
+                document.getElementById('result').innerHTML = 'RED allert! possible anomalous Entity, maybe a vampire or eldar idk, i do not care, im getting the hell out, RUN FOR YOUR LIFE!!!!!!';
+            }
+            else{
+                document.getElementById('result').innerHTML = 'please enter valid input';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Name Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Month Name Finder</h2>
+        <input type="number" id="monthInput" min="1" max="12" placeholder="month number">
+        <button onclick="getMonthName()">Month Name</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function getMonthName() {
+            let monthNumber = parseInt(document.getElementById('monthInput').value);
+                if (monthNumber == 1){
+                    document.getElementById('result').innerHTML = "January";
+                } else if (monthNumber == 2) {
+                    document.getElementById('result').innerHTML = "February";
+                } else if (monthNumber == 3) {
+                    document.getElementById('result').innerHTML = "March";
+                } else if (monthNumber == 4) {
+                    document.getElementById('result').innerHTML = "April";
+                } else if (monthNumber == 5) {
+                    document.getElementById('result').innerHTML = "May";
+                } else if (monthNumber == 6) {
+                    document.getElementById('result').innerHTML = "June";
+                } else if (monthNumber == 7) {
+                    document.getElementById('result').innerHTML = "July";
+                } else if (monthNumber == 8) {
+                    document.getElementById('result').innerHTML = "August";
+                } else if (monthNumber == 9) {
+                    document.getElementById('result').innerHTML = "September";
+                } else if (monthNumber == 10) {
+                    document.getElementById('result').innerHTML = "October";
+                }
+                else if (monthNumber == 11) {
+                    document.getElementById('result').innerHTML = "November";
+                } else if (monthNumber == 12) {
+                    document.getElementById('result').innerHTML = "December";
+                }
+                else {
+                    document.getElementById('result').innerHTML = "Who are you!, <br> Alert!: this individual doen't know how  months work";
+                }
+        }
+    </script>
+</body>
+</html>
